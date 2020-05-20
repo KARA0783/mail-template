@@ -9,6 +9,16 @@
     <input type="text">
     <button type="button" name="button">実行</button>
     <p>結果表示</p>
-    <script src="chap5.js"></script>
+
+    <script>
+    let ipt = docment.querySelector(`input`);
+    let btn = docment.querySelector(`button`);
+    let elem = docment.querySelector(`p`);
+
+    btn.addEventListener(`click`, () => {
+      elem.innerText = ipt.value;
+    };);
+    </script>
+
   </body>
 </html>
